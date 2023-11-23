@@ -159,3 +159,13 @@ Please write your answers here
     b. mutexes: mutexes are a type of semaphore that guarantees exclusive access to a shared resource
     c. locks: locks are a higher-level abstraction that can be used to protect shared data structures
 18. Interrupts are signals that are sent to the processor by hardware devices or software programs. They are used to notify the processor that an event has occurred, such as a key press or a timer expiration. XV6 handles interrupts by using an interrupt vector table, which is a table of function pointers. Each interrupt type has its own function pointer, which is called when the interrupt occurs.
+19. Virtual memory is a memory management technique that allows the os to create an illusion of having more memory than is physically available. xv6 use a technique called segmentation to provide a limited form of virtual memory. Segmentation divides the virtual address space into segments, which are fixed-size regions of memory. Each segment is mapped to a physical address, and the operating system can swap segments in and out of physical memory as needed. Advantages:
+    a. increased program size
+    b. improved mem protection
+    c. easier mem management
+20. The boot process is the process of loading the operating system into memory and starting it running.
+    a. BIOS initializes the hardware
+    b. The BIOS loads the bootloader
+    c. bootloader sets up the kernel stack and calls the kernel entry point
+    d. kernel initializes the system
+    e. kernel starts the first user process
